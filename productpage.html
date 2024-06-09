@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .product-image {
+        margin-right: 450px;
+        display: block;
+        max-width: 10px;
+    }
+    
+    .product-details {
+        max-width: 400px;
+    }
+    
+    .price {
+        font-size: 20px;
+        color: #110f0f;
+    }
+    
+    .description {
+        color: #da0b0b;
+    }
+    
+    .quantity {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .add-to-cart {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .add-to-cart:hover {
+        background-color: #0056b3;
+    }
+    
+    .reviews {
+        margin-top: 40px;
+    }
+    
+    .review {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .review h3 {
+        margin-top: 0;
+    }
+    
+    .review-date {
+        font-style: italic;
+    }
+    
+    .related-products {
+        margin-top: 40px;
+    }
+    
+    .related-product {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .related-product img {
+        max-width: 200px;
+        max-height: 200px;
+        margin-bottom: 10px;
+    }
+    
+    .related-product h3 {
+        margin-top: 0;
+    }
+    
+    .related-product .price {
+        color: #333;
+        font-weight: bold;
+    }
+/* testing something */
+    header {
+      background-color: #043d47;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .search-box {
+      flex-grow: 1;
+      margin: 0 20px;
+    }
+    .search-box input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- testing something -->
+    <header>
+        <h1>JOSU'S PRODUCTS</h1>
+      </header>
+      <nav>
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+        </div>
+        <div>
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>    
+    <!-- testing something -->
+    <div class="container">
+        <div class="product-image">
+            <img src="Assignment pictures/bag.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1>NIKE</h1>
+            <p class="price">$29.99</p>
+            <p class="description">School Bag.</p>
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <h2>The product has been used and trusted by a wide range of users</h2>
+        <div class="review">
+            <h3>Tobalo David</h3>
+            <p>Indeed an extraordinary and essential piece in our everyday work. Trusted as the most versatile schol bag .</p>
+            <p class="review-date">Reviewed on: September 3, 2024</p>
+        </div>
+        <!-- More reviews can be added here -->
+    </div>
+
+    <div class="related-products">
+        <h2>Related Products</h2>
+        <div class="related-product">
+            <img src="Assignment pictures/bicycle.jpg" alt="Related Product 1">
+            <h3>Bicycle</h3>
+            <p class="price">$109.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="related-product">
+            <img src="Assignment pictures/books.jpg" alt="Related Product 2">
+            <h3>Textbooks</h3>
+            <p class="price">$9.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- More related products can be added here -->
+    </div>
+</body>
+</html>
